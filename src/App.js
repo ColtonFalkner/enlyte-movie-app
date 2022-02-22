@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       <ComparisonCard />
-      <MovieCard />
-      <MovieCard />
+      <MovieCard title='Movie 1' releaseDate='May 3, 2015' />
+      {/* <MovieCard /> */}
     </div>
   )
 }
