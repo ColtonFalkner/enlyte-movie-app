@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ClockStyle = styled.div`
-  height: 3rem;
+  height: 4rem;
   width: 3rem;
-  display: inline-flex;
+  display: inline-block;
   padding-top: 0.5rem;
 `
 const Clock = () => {
