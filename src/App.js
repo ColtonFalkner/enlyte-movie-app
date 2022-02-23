@@ -1,14 +1,14 @@
-import './App.scss'
 import ComparisonCard from './Components/Comparison/ComparisonCard'
 import MovieCard from './Components/MovieCard/MovieCard'
 import GlobalStyles from './Components/Global'
-import { Global } from 'recharts'
+
+// import { Global } from 'recharts'
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      {/* <ComparisonCard /> */}
+      <ComparisonCard />
       <MovieCard
         title='Movie 1'
         releaseDate='04 Jan 2015'
