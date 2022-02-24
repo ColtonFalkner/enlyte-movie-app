@@ -14,11 +14,11 @@ function App() {
         releaseDate='04 Jan 2015'
         ticketDate='May 3, 2015'
       />
-      {/* <MovieCard
+      <MovieCard
         title='Movie 2'
         releaseDate='6 Feb 2015'
         ticketDate='May 3, 2015'
-      /> */}
+      />
     </>
   )
 }
