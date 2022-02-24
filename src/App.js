@@ -9,7 +9,6 @@ function App() {
       <GlobalStyles />
       <UIWrapper>
         <ComparisonCard />
-
         <MovieCard
           title='Movie 1'
           releaseDate='04 Jan 2015'
