@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Clock from './ClockSVG'
+import Clock from '../ClockSVG'
 
 const CardBase = styled.div`
-  display: inline-block;
+  display: block;
   position: relative;
+  flex: 1;
   width: 100rem;
   height: 56.25rem;
   border-radius: 3px;
-  margin: 0px auto;
+  margin: 2rem auto;
   //Extract to variable
   background-color: #fff;
   box-shadow: 0 0 0.5rem #302e2c;
@@ -43,9 +44,13 @@ const TicketWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 4rem;
+  margin: 2rem 4rem 2rem 4rem;
   padding: 2rem 0 2rem 0;
   border-bottom: 1px solid #dfdede;
+
+  &:last-child {
+    border-bottom: none;
+  }
 `
 
 const TicketDate = styled.p`
@@ -63,6 +68,16 @@ const BuyButton = styled.button`
   font-size: 3.5rem;
   font-weight: 600;
   color: #fff;
+
+  &:hover {
+    background-color: #6baabb;
+    border: 1px solid #6baabb;
+  }
+
+  &:active {
+    background-color: #09728e;
+    border: 1px solid #09728e;
+  }
 `
 const MovieCard = (props) => {
   return (
