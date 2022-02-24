@@ -5,6 +5,7 @@ import {
   XAxis,
   YAxis,
   Tooltip,
+  Label,
   CartesianGrid,
   ResponsiveContainer,
   ReferenceDot,
@@ -22,18 +23,24 @@ const data = [
 
 const Graph = (props) => {
   return (
-    <div style={{ width: 700, height: 300 }}>
+    <div style={{ width: 500, height: 250 }}>
       <ResponsiveContainer>
         <AreaChart
           width={'auto'}
           height={'auto'}
           data={data}
-          margin={{ top: 10, right: 30, left: 20, bottom: 5 }}
+          margin={{ top: 20, right: 16, left: 8, bottom: 16 }}
         >
           <CartesianGrid opacity={0.3} />
-          <XAxis dataKey='name' fontSize={15} />
+          <XAxis dataKey='name' fontSize={15}>
+            <Label
+              value={'Comparison - Movie 1 and Movie 2'}
+              position={'bottom'}
+              fontSize={10}
+            />
+          </XAxis>
           <YAxis fontSize={15} interval={0} tickSize={5} />
-          <ReferenceDot alwaysShow={'true'} />
+          <ReferenceDot ifOverflow='extendDomain' />
           <Tooltip viewBox={'x: 0, y: 0, width: 20px, height: 15px'} />
 
           <Area
